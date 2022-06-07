@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.NavBar{
+    display: flex;
+}
+
+
+
+.NavList{
+    width: 50%;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+}
+
+.Logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.NavList li {
+    list-style: none;
+    padding: 5% 5%;
+}
+
+.NavList li a{
+    text-decoration: none;
+    color: white;  
+}
+
+.NavList li a:hover{
+    color: blue;  
+}
+
+.RightNav{
+    width: 50%;
+    background-color: #212121;
+    text-align: right;
+}
+
+.Search{
+    padding: 5px;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-right: 4%;
+}
+
+/* .Section{
+ 
+}
+
+.Section div{
+
+} */
+
+.Section div img{
+    /* min-width: 1024px; */
+    display: flex;
+    min-height: 100%;
+
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+
+.SeekBar{
+    position: sticky;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#SeekBar{
+    margin-top: 10%;
+    text-align: center;
+    width: 60vw;
+    margin-left: 50%;
+    cursor: pointer;
+}
+
+.Items{
+
+    size: 10%;
+    margin-top: 15px;
+    margin-left: 50%;
+}
+
+.Items i{
+    cursor: pointer;
+    color: rgb(89, 74, 133);
+}
+
+#image{
+    position: absolute;
+    text-align: center;
+}
+
+.Container{
+    min-height: 30vh;
+    color:white;
+    display:flex;
+    width: 20%;
+    /* padding: %; */
+}
+
+.top-left
+{
+    position: absolute;
+    top: 20%;
+    left: 16px;
+    color: #341b53;
+}
+
+.SongList{
+    margin-top: 5%;
+    position: relative;
+    height: 20px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(25, 3, 3);
+}
+
+#hr1{
+    margin-top:3%;
+}
+
+.SongItem{
+    width: 34px;
+    /* height: 28px; */
+    display: flex;
+    margin: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    /* background-color: white; */
+}
+
+.SongItem span{
+    margin-left: 100%;
+}
+
+.SongItem img{
+   
+    margin:0 20px;
+    display: flex;
+    border-radius: 40%;
+}
+
+/* .Timespan{
+    cursor: pointer;
+} */
+
+/* .Timespan i{
+    cursor: pointer;
+} */
+
+.SongItem i{
+    cursor: pointer;
+}
+
+/* #playspan{
+    cursor: pointer;
+} */
+.SongGif
+{
+    width: 10%;
+    display: flex;
+    margin-top: 2px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.SongGif img{
+    opacity: 0;
+    transition: opacity 0.46 ease-in;
+}
+
+/* Include padding and border in total box size*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that float next to each other */
+.column-2 {
+  float: left;
+  width: 45%;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 450px;
+  margin:25px;
+  margin-right:30px;
+  margin-bottom: 70px;
+  background-color: #FEDE00;
+  line-height:2;
+}
+
+#hr2
+{
+    margin-top: 5%;
+}
+
+/* Large profile image */
+.large-profile {
+  /* background: url('images/my.jpg'); */
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+}
+
+.heading1{
+    margin-top: 20%;
+    position: relative;
+    font-size: 2vw;
+    /* color:#252839;*/
+    -webkit-text-stroke: 0.3vw #b3c1f5; 
+    text-transform:uppercase;
+}
+
+.heading1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height:30px;
+    color: #3d3479;
+    -webkit-text-stroke: 0vw #8eeaeb;
+    border-right: 2px solid #b7c0bc;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    20%,30%{
+        width: 100%;
+    }
+}
